@@ -9,4 +9,5 @@ function mostrar()
 		alert(numero);
 		numero--;
 	}
+	
 }
