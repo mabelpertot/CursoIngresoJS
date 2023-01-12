@@ -1,6 +1,13 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");
+  var numero=Math.floor(Math.random()*11);
+  console.log(numero);
 
-}//FIN DE LA FUNCIÓN
+  if (numero<'4'){
+    alert("Vamos, la proxima se puede");
+  }else if (numero>='4'&&numero<='8'){
+    alert("APROBÓ");
+  }else{
+    alert('EXCELENTE');
+  }
+ }

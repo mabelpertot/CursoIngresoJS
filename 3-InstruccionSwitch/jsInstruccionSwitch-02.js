@@ -1,10 +1,25 @@
 function mostrar()
 {
-	//tomo el mes
-	var mesDelAño =txtIdMes.value;
-	alert(mesDelAño);
+	var mes=txtIdMes.value;
 
+	switch (mes){
+		default:
+			alert('Falta para el invierno.');
+			break;
+		case 'Julio':
+		case 'Agosto':
+			alert('Abrigate que hace frio.');
+			break;
+		case 'Septiembre':
+		case 'Octubre':
+		case 'Noviembre':
+		case 'Diciembre':
+			alert('Ya pasamos el frio, ahora calor!!!');
+	}
 
-
-
-}//FIN DE LA FUNCIÓN
+/*	switch (true){
+		case ["Septiembre", "Octubre", "Noviembre", "Diciembre"].includes(mes):
+			alert('Ya pasamos el frio, ahora calor!!!.');
+	}
+*/
+}
