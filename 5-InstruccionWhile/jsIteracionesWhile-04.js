@@ -6,5 +6,6 @@
 	alert('Dato Invalido');
 	numero=prompt("ingrese un número entre 0 y 10.");
     }
+	
 	alert('Dato Valido');	
 }
