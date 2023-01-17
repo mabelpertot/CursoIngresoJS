@@ -1,11 +1,10 @@
-
+function mostrar()
 {
-	var numero
-	numero=prompt("ingrese un número entre 0 y 10.");
-
-	while (numero!='10'){
+	var numero=prompt("ingrese un número entre 0 y 9.");
+	
+	while (numero>9){
 		alert('Dato Invalido');
-		numero=prompt("ingrese un número entre 0 y 10.");
-    }	
+		numero=prompt("ingrese un número entre 0 y 9.");
+    }
+	txtIdNumero.value=numero;
 }
-txtIdNumero.value=num;
