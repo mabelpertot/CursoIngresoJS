@@ -14,4 +14,3 @@ igual=parseInt(uno) + parseInt (dos)
 
 alert("El resultado es " + igual);
 }
-

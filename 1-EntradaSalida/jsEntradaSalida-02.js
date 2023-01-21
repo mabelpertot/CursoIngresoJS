@@ -4,7 +4,7 @@ y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 { 
 var nombre;
-nombre=prompt('Como te llamas?');
+nombre=prompt('Ingrese su nombre');
 
 alert('Te llamas ' + nombre);
 }
