@@ -105,5 +105,5 @@ function dividir()
 		num2 = parseInt(document.getElementById ("txtIdNumeroDos").value);
 		resultado = num1 / num2;
 	
-		alert("La division es " + resultado); /*alert("Literal de cadena" + operador concatenador)
-	}	
+		alert("La division es " + resultado); 
+	} /*alert("Literal de cadena" + operador concatenador*/
