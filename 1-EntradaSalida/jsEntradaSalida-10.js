@@ -12,16 +12,3 @@ function mostrarAumento()
 	resultado=parseInt(importe)-parseInt(importe*25)/100;
 
 	txtIdResultado.value=resultado;*/
-
-{
-	let importe;
-	let importeFinal;
-	let descuento;
-
-	importe = parseFloat(document.getElementById("txtIdImporte").value);
-	descuento = importe * 25 / 100;  
-	importeFinal = importe - descuento;
-
-	importeFinal = document.getElementById("txtIdResultado").value;
-}	
-
