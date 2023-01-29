@@ -1,6 +1,36 @@
 function mostrar()
 {
-	var estacion=txtIdEstacion.value;
+	let estacion = document.getElementById("txtIdEstacion").value;
+    let destino = document.getElementById("txtIdDestino").value;
+	let viaje = 0
+
+	switch(estacion){
+		case "Invierno":
+			if(destino == "Bariloche"){
+				viaje = 1;
+			}
+			break;
+		case "Verano":
+			if(destino == "Mar del plata" || destino == "Cataratas"){
+				viaje = 1;
+			}
+			break;
+		case "Otoño":
+			viaje = 1;
+		case "Primavera":
+			if(destino != "Cordoba" ){
+				viaje = 1;	
+			}
+			break;
+	   }
+		   if(viaje == 1){
+			alert("Se viaja");
+	   }
+	   else{
+		   alert("No se viaja");
+	}
+}
+	/*var estacion=txtIdEstacion.value;
 	var destino=txtIdDestino.value;
 
 	switch(estacion+"|"+destino){
@@ -19,5 +49,5 @@ function mostrar()
 			case "Primavera|Cordoba":
 			alert('✈️ Se viaja a '+destino+ ' en '+estacion);
 			break;			
-		}
-	}
+		}*/
+	

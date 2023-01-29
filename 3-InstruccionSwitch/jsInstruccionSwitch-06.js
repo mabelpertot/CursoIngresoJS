@@ -1,12 +1,30 @@
 function mostrar()
-{
-	//tomo la hora
-	var hora=txtIdHora.value;
+{ /*EJERCICIO RESUELTO CON IF*/
 
-	switch(hora){
-		default:
-			alert('La hora no existe');
-			break;
+	let hora;
+
+	hora = parseInt(document.getElementById("txtIdHora").value);
+    if(hora >= 7 && hora <= 11){
+		alert("Es de mañana");
+	}
+	else if(hora >=12 && hora <= 19 ){
+		alert("Es de tarde");
+	}
+	else if((hora >=20 && hora <= 24) || (hora >=0 && hora <= 6)){
+		alert("Es de noche");
+	}
+	else{
+		alert("Esa no es una hora valida");
+	}	
+}
+
+/* EJERCICIO RESUELTO CON SWITCH
+
+    let hora;
+
+	hora = parseInt(document.getElementById("txtIdHora").value);
+
+    switch(hora){
 		case '7':
 		case '8':
 		case '9':
@@ -36,6 +54,9 @@ function mostrar()
 		case '4':
 		case '5':
 		case '6':
-			alert('Es de noche.')
-		}
-}
+			alert('Es de noche.');
+			break;
+
+		default:
+			alert('La hora no es valida');
+}*/
