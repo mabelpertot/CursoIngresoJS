@@ -1,9 +1,14 @@
 function mostrar()
 {
-    var numero=1;
+    let i = 1;
 
-    while(numero<=10){
-        alert(numero);
-        numero++;
+    while(i <= 10){
+       console.log(i);
+        i++;  
     }
 }
+    /*{var numero=1;
+
+while(numero<=10){
+    alert(numero);
+    numero++;}*/
