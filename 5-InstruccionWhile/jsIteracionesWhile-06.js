@@ -2,7 +2,6 @@ function mostrar()
 {
 	let numero;
 	let acumulador = 0;
-	let suma;
 	let promedio;
 	let i = 0;
 
