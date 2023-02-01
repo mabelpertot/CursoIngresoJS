@@ -5,55 +5,6 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 
-/*var uno;
-var dos;
-var resultado;
-
-uno=txtIdNumeroUno.value;
-dos=txtIdNumeroDos.value;
-resultado=parseInt(uno)+parseInt(dos);
-
-	alert("La suma es "+resultado);	
-}
-
-function restar()
-{
-	var uno;
-	var dos;
-    var resultado;
-
-	uno=txtIdNumeroUno.value;
-	dos=txtIdNumeroDos.value;
-	resultado=parseInt(uno)-parseInt(dos);
-
-	alert("La resta es "+resultado);
-}
-
-function multiplicar()
-{ 
-	var uno;
-	var dos;
-    var resultado;
-
-	uno=txtIdNumeroUno.value;
-	dos=txtIdNumeroDos.value;
-	resultado=parseInt(uno)*parseInt(dos);
-
-	alert("La multiplicacion es "+resultado);
-}
-
-function dividir()
-{
-	var uno;
-	var dos;
-    var resultado;
-
-	uno=txtIdNumeroUno.value;
-	dos=txtIdNumeroDos.value;
-	resultado=parseInt(uno)/parseInt(dos);
-
-	alert("La division es "+resultado);*/
- 
 	{
 		let num1;
 		let num2;
@@ -106,4 +57,54 @@ function dividir()
 		resultado = num1 / num2;
 	
 		alert("La division es " + resultado); 
-	} /*alert("Literal de cadena" + operador concatenador*/
+	} 
+	
+	/*alert("Literal de cadena" + operador concatenador
+	var uno;
+var dos;
+var resultado;
+
+uno=txtIdNumeroUno.value;
+dos=txtIdNumeroDos.value;
+resultado=parseInt(uno)+parseInt(dos);
+
+	alert("La suma es "+resultado);	
+}
+
+function restar()
+{
+	var uno;
+	var dos;
+    var resultado;
+
+	uno=txtIdNumeroUno.value;
+	dos=txtIdNumeroDos.value;
+	resultado=parseInt(uno)-parseInt(dos);
+
+	alert("La resta es "+resultado);
+}
+
+function multiplicar()
+{ 
+	var uno;
+	var dos;
+    var resultado;
+
+	uno=txtIdNumeroUno.value;
+	dos=txtIdNumeroDos.value;
+	resultado=parseInt(uno)*parseInt(dos);
+
+	alert("La multiplicacion es "+resultado);
+}
+
+function dividir()
+{
+	var uno;
+	var dos;
+    var resultado;
+
+	uno=txtIdNumeroUno.value;
+	dos=txtIdNumeroDos.value;
+	resultado=parseInt(uno)/parseInt(dos);
+
+	alert("La division es "+resultado);*/

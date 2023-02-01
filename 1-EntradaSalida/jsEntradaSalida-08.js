@@ -5,17 +5,7 @@ transformarlos a enteros (parseInt),realizar la operación correcta y
 mostrar el resto entre el dividendo y el divisor.
 ej.: "El resto es 0 ."*/
 
-    /*var dividendo;
-	var divisor;
-	var resultado;
-
-	dividendo=txtIdNumeroDividendo.value;
-	divisor=txtIdNumeroDivisor.value;
-	resultado=parseInt(dividendo)%parseInt(divisor);
-
-	alert("El resto es "+resultado);*/
-	
-	{
+  {
 		{
 			let dividendo;
 			let divisor;
@@ -39,3 +29,13 @@ ej.: "El resto es 0 ."*/
    /*Si en una operacion se combina prioridad de operadores, se resuelve de izquierda a derecha*/
    /*Para resolver x + y * z y aplicar la operacion de suma y luego multiplicar se encierra en parentesis (x + y) * z*/
    /*Parentesis tiene la mayor prioridad*/
+
+     /*var dividendo;
+	var divisor;
+	var resultado;
+
+	dividendo=txtIdNumeroDividendo.value;
+	divisor=txtIdNumeroDivisor.value;
+	resultado=parseInt(dividendo)%parseInt(divisor);
+
+	alert("El resto es "+resultado);*/
