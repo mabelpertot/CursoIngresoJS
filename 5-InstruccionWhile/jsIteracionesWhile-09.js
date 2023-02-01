@@ -19,16 +19,19 @@ function mostrar()
 			maximo = numero;
 		}
 	//Si no lo es actualizar de ser necesario mínimo y máximo.
+	//Si se tuviera que calcular contar e ir incrementando se utilizaria un contador.
+	//Utilizar variable una bandera 0 u 1.
          if (flag == 0 || numero < minimo){
 			 minimo = numero;
 			 flag = 1;
+
 			}
 
 		seguir = prompt("Quiere ingresar otro numero?");
 
 	} while(seguir == 's');
 	//Muestro dato mínimo y máximo(caja de txt).
-    }
-	document.getElementById("txtIdMaximo").value = maximo;
-	document.getElementById("txtIdMinimo").value = minimo;
-		
+    
+     document.getElementById("txtIdMaximo").value = maximo;
+	 document.getElementById("txtIdMinimo").value = minimo
+}
