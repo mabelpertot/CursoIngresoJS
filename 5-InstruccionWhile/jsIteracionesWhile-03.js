@@ -5,17 +5,21 @@ function mostrar()
 	clave = prompt("Ingrese clave");
 
 	while(clave == "utn750"){
-		alert("Clave Correcta");
+		alert("Clave Correcta ✅" + clave);
 		
 	clave = prompt("Ingrese clave");
 	}
-        alert("Clave Incorrecta");
+        alert("Clave Incorrecta❌" + clave);
 }
 
-/*var clave=prompt("ingrese el número clave.");
-
-	while (clave!='utn750'){
-		alert(' ❌erroneo');
-		clave=prompt("ingrese el número clave.");
+/* { do{
+	if (flag == 0){
+		flag = 1;
 	}
-	alert('✅correcto');*/
+	else{
+		clave = prompt("Clave invalida!!, re ingrese clave");
+}
+
+} while (clave != "utn750");
+alert("Clave valida. ");
+}*/
