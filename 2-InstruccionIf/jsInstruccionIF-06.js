@@ -1,6 +1,20 @@
 function mostrar()
 {
-   
+	let edad;
+
+	edad=parseInt(document.getElementById("txtIdEdad").value);
+	if(edad < 13){
+		alert("Es Niño");
+	}
+	else if(edad >= 13 && edad <= 17){
+				alert("Es adolescente");
+	}
+	else{
+	alert("Es mayor de edad");
+    }
+}
+
+
 	/*edad=parseInt(txtIdEdad.value);
 
 	if (edad<="12"){
@@ -10,19 +24,3 @@ function mostrar()
 	}else {
 			alert("Mayor");
 	}*/
-
-	let edad;
-
-	edad=parseInt(document.getElementById("txtIdEdad").value);
-	if(edad < 13){
-		alert("Es Niño");
-	}
-		else if(edad >= 13 && edad <= 17){
-				alert("Es adolescente");
-			}
-			else{
-				alert("Es adulto");
-
-			}
-		}
-	
