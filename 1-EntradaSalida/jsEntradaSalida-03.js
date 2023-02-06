@@ -12,3 +12,4 @@ function mostrar()
 	//*nombre=txtIdNombre.value;
 
 	//*alert(nombre);*/
+

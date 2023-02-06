@@ -1,18 +1,12 @@
 function mostrar()
 {
-	/*edad=parseInt(txtIdEdad.value);
-
-	if (edad>='13'&&edad<='17'){
-		alert("✅ Es adolescente")
-	}*/
-
 	let edad;
 
 	edad=parseInt(document.getElementById("txtIdEdad").value);
 
 	if(edad>= 13 && edad<= 17){ 
 
-		alert("Es adolescente");
+		alert("✅Es adolescente");
 	}
 }     
 
@@ -25,3 +19,8 @@ Si el valor de la edad esta dentro del rango de un adolescente obviamente es ado
 	alert("Es adolescente");
   } 
   Para que se ejecuten los relacionales se encierra dentro de parentesis*/
+  /*edad=parseInt(txtIdEdad.value);
+
+	if (edad>='13'&&edad<='17'){
+		alert("✅ Es adolescente")
+	}*/

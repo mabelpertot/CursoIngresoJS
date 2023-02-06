@@ -7,9 +7,9 @@ function mostrar()
     if( edad == 15){
         alert("Niña bonita");
     }
-
-    alert("Fin de la función");
 }
+
+
 //*{
     //*let edad;
     //*edad=document.getElemetById("txtIdEdad").value;
