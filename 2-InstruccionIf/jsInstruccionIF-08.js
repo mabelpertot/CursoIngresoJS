@@ -11,7 +11,6 @@ function mostrar()
 	}
 }
 
-
 /*Negativa Anti Intuitiva
 If(!(edad < 18 || estadoCivil != "Soltero")){
 	alert( "Es soltero y no es menor")

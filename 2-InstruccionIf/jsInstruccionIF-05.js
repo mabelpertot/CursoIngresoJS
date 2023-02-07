@@ -25,4 +25,4 @@ function mostrar()
 	if (edad>='0'){
 		alert("✅ No es adolescente")	
 	}*/
-//Si estoy fuera del rango
+//Si estoy fuera del rango!
