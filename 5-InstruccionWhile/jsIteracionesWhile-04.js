@@ -14,6 +14,7 @@ function mostrar()
 	document.getElementById("txtIdNumero").value = numero;
     alert("Dato Invalido");
 }
+
 	/*{var numero=prompt("ingrese un número entre 0 y 9.");
 	
 	while (numero>9){
