@@ -38,8 +38,8 @@ function mostrar()
 		break;
 	case "Otoño":
 	case "Primavera":
-		if(destino != "Cordoba" ){
-		    aumento = 10;;	
+		if(destino == "Cordoba" ){
+		    aumento = 0;	
 		}
 		else{
 			aumento = 10;
@@ -57,6 +57,9 @@ function mostrar()
    }
        alert("Precio final $ "+ precioFinal);
 }
+
+
+
 	/*RESUELTO CON ANGEL
     var estacion=txtIdEstacion.value;
     var destino=txtIdDestino.value;

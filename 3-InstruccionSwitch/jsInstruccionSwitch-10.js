@@ -18,7 +18,7 @@ function mostrar()
 		case "Otoño":
 			viaje = 1;
 		case "Primavera":
-			if(destino != "Cordoba" ){
+			if(destino != "Bariloche" ){
 				viaje = 1;	
 			}
 			break;
@@ -30,6 +30,8 @@ function mostrar()
 		   alert("No se viaja");
 	}
 }
+
+
 	/*var estacion=txtIdEstacion.value;
 	var destino=txtIdDestino.value;
 

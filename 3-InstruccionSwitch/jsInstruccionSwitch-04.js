@@ -15,12 +15,14 @@ function mostrar()
 	case 'Abril':
 	case 'Junio':
 	case 'Septiembre':
-		break;
 		alert('Este mes tiene 30 dias');
+		break;
+		
 			default:
-				alert('Este mes tiene 31 dias');
-			}		
+		alert('Este mes tiene 31 dias');
+	}		
 }	
+
 	/*var mes=txtIdMes.value;
 	switch(mes){
 		default:
