@@ -2,8 +2,8 @@ function mostrar()
 {
 	
 	const PRECIO = 15000;
-	let estacion
-    let destino
+	let estacion;
+    let destino;
     let precioFinal;
     let descuento = 0;
 	let aumento = 0;
