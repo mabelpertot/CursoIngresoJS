@@ -7,11 +7,10 @@ function mostrar()
 	
 	sexo = prompt("Ingrese sexo");
 
-	while(sexo == 'f'){
+	while(sexo != "f" && sexo != "m" || sexo != "F" && sexo != "M"){
 		alert("Usted es de sexo Femenino");
 
-	}
-		sexo = prompt("Ingrese sexo");	
-		alert("Usted es de sexo Masculino");
+	}	
 		document.getElementById("txtIdSexo").value = sexo;
-	}
+	
+}
