@@ -10,86 +10,58 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio ()
 {
-    let cantidad;
-    let lamparas;
-    let descuento;
-    let precioFinal;
-    let precioBruto;
-    let proporcion;
-    let mensaje;
+    const PRECIO = 35;
     const IIBB = 10;
-    const PRECIO_LAMP = 35;
+    let cantidad;
+    let marca;
+    let descuento = 0;
+    let proporcion;
+    let importe;
+    
+    
+    cantidad = parseInt(document.getElementById("txtIdCantidad").value);
+    marca = document.getElementById("Marca").value;
 
-    descuento = 0;
+    importe = (PRECIO * cantidad);
 
-    cantidad = document.getElementById("txtIdCantidad").value; 
-
-    cantidad = parseInt(cantidad);
-
-    lamparas = document.getElementById("Marca").value;
-
-    mensaje = "Compre: " + cantidad + " de la marca: " + lamparas + " y obtuve un  descuento del ";
-
-    if(cantidad > 5)
+    if(cantidad >=6)
     {
-        //Punto "A"
         descuento = 50;        
+    }
+    if(cantidad == 5 && marca == "ArgentinaLuz")
+    {
+        descuento = 40;           
+     }
+    else
+    {
+       descuento = 30;
+    }
+    
+    if(cantidad == 4 && marca == "ArgentinaLuz" || marca == "FelipeLamparas")
+     {
+      descuento = 25;
     }
     else
     {
-        if(cantidad > 4)
-        {
-            if(lamparas == "ArgentinaLuz")
-            {
-                //Punto "B"
-                descuento = 40;           
-            }
-            else
-            {
-                descuento = 30;
-            }
-        }    
-        else
-        {
-            if(cantidad > 3)
-            {
-                if(lamparas == "ArgentinaLuz" || lamparas == "FelipeLamparas")
-                {
-                    descuento = 25;
-                }
-                else
-                {
-                    descuento = 20;
-                }                
-            }
-            else
-            {
-                if(cantidad > 2)
-                {
-                    if (lamparas == "ArgentinaLuz")
-                    {
-                        descuento = 15;
-                    }
-                    else
-                    {
-                        if (lamparas == "FelipeLamparas")
-                        {
-                            descuento = 10;
-                        }
-                        else
-                        {
-                            descuento = 5;
-                    
-                        }
-                    }    
-                }
-            }
-        }    
-    }
-    
-    mensaje = mensaje + descuento + " porcentaje";
+       descuento = 20;
+    }                
 
-        precioBruto = cantidad * PRECIO_LAMP;
+    if(cantidad == 3 && marca == "ArgentinaLuz")
+    {
+       descuento = 15;
+    }
+    if (cantidad == 3 && marca == "FelipeLamparas")
+    {
+     descuento = 10;
+    }
+     else
+    {
+    descuento = 5;
+    }
+}    
+    proporcion = importe *(descuento / 100);
+
+        precioBruto = cantidad * PRECIO;
     
     proporcion = (precioBruto * descuento) / 100;
 
@@ -100,8 +72,8 @@ function CalcularPrecio ()
         precioFinal = precioFinal + proporcion;
         mensaje = mensaje + "me aplicaron impuestos";
          
-    }
 }
+
     alert(mensaje);
     alert(precioFinal);
 

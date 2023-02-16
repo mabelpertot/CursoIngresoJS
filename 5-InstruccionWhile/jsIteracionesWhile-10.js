@@ -31,25 +31,25 @@ function mostrar()
 		numero = parseInt(prompt("Ingrese un numero: "));
     //Analizar el signo de numeros y actuar en consecuencia.
 	     
-	    if (numero < 0){
+	if (numero < 0){
 			//negativos
-			acumuladorNegativos += numero;
-			contadorNegativos++;
-		}
-		else if(numero == 0){
+		acumuladorNegativos += numero;
+		contadorNegativos++;
+	}
+	else if(numero == 0){
 			//ceros.
-			contadorCeros++;
-		}
-			else {
+	contadorCeros++;
+	}
+	else {
 		    //positivos.
-				acumuladorPositivos += numero;
-				contadorPositivos++;
+	acumuladorPositivos += numero;
+	contadorPositivos++;
 			
-		}
+	}
 		     //Analizar si el numero es paridad.
-			 if(numero % 2 == 0){
-				contadorPares++;
-			 }
+	if(numero % 2 == 0){
+	contadorPares++;
+	}
 
 		seguir = prompt("Quiere ingresar otro numero?");
 
@@ -64,13 +64,13 @@ function mostrar()
 
 	diferencia = contadorPositivos - contadorNegativos;
 
-     console.log("1-Suma de los negativos: " + acumuladorNegativos);
-	 console.log("2-Suma de los positivos: " + acumuladorPositivos);
-	 console.log("3-Cantidad de positivos: " + contadorPositivos);
-	 console.log("4-Cantidad de negativos; " + contadorNegativos);
-	 console.log("5-Cantidad de ceros: " + contadorCeros);
-	 console.log("6-Cantidad de pares: " + contadorPares);
-	 console.log("7-Promedio de positivos: " + promediosPositivos);
-	 console.log("8-Promedio de negativos: " + promediosNegativos);
-	 console.log("9-diferencia" + diferencia);
+     document.write("1-Suma de los negativos: " + acumuladorNegativos);
+	 document.write("2-Suma de los positivos: " + acumuladorPositivos);
+	 document.write("3-Cantidad de positivos: " + contadorPositivos);
+	 document.write("4-Cantidad de negativos; " + contadorNegativos);
+	 document.write("5-Cantidad de ceros: " + contadorCeros);
+	 document.write("6-Cantidad de pares: " + contadorPares);
+	 document.write("7-Promedio de positivos: " + promediosPositivos);
+	 document.write("8-Promedio de negativos: " + promediosNegativos);
+	 document.write("9-diferencia" + diferencia);
 }
