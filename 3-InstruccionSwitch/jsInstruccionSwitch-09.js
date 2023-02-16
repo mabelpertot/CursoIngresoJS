@@ -19,7 +19,7 @@ function mostrar()
 			aumento = 20;
 		}
 		else if(destino == "Mar del plata"){
-			descuento = 20
+			descuento = 20;
 		}
 		else{
 			descuento = 10;
@@ -30,7 +30,7 @@ function mostrar()
 			descuento = 20;
 		}
 		else if(destino == "Mar del plata"){
-			aumento = 20
+			aumento = 20;
 		}
 		else{
 			aumento = 10;
