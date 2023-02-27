@@ -12,7 +12,7 @@ hasta que el usuario quiera, mostrar:
 9-Diferencia entre positivos y negativos, (positvos-negativos). */
 function mostrar()
 {	//Declaración de variables.
-	let seguir;
+	let seguir = true;
 	let numero;
 	let contadorPositivos = 0; 
 	let contadorNegativos = 0;
@@ -51,9 +51,9 @@ function mostrar()
 	contadorPares++;
 	}
 
-		seguir = prompt("Quiere ingresar otro numero?");
+		seguir = confirm("Quiere ingresar otro numero?");
 
-	} while (seguir == 's');
+	} while (seguir == true);
     // Hacer los calculos que necesitan los datos conseguidos durante el bucle.
 	if (contadorPositivos > 0){
     promediosPositivos = acumuladorPositivos / contadorPositivos;
